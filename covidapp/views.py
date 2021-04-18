@@ -37,5 +37,5 @@ def helloworldview(request):
             return render(request, 'helloworld.html', context)
 
 
-    context = {'mylist' : mylist}
+    context = {'mylist' : sorted(mylist)}
     return render(request,'helloworld.html',context)
